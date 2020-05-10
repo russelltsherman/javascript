@@ -1,6 +1,15 @@
 /* eslint-disable no-console */
+
 const assert = require('assert');
 
+/**
+ * an anagram is a word, phrase, or name formed by rearranging the letters of another.
+ * accepts two strings as input
+ * return true if the second string is an anagram of the first.
+ * @param {*} str1
+ * @param {*} str2
+ * @return bool
+ */
 function isAnagram(str1, str2) {
   // an anagram uses all the letters
   if (str1.length !== str2.length) return false;

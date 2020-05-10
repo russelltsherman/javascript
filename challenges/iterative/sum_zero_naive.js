@@ -1,6 +1,13 @@
 /* eslint-disable no-console */
 const assert = require('assert');
 
+/**
+ * accept a sorted signed integer array as input
+ * return an array of the first pair of values where the sum is zero
+ * return empty array if no values are found
+ * @param {*} arr
+ * @returns {} arr
+ */
 function sumZero(arr) {
   // iterate array
   for (let i = 0; i < arr.length; i += 1) {

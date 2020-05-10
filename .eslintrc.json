@@ -1,18 +1,11 @@
 {
-  "env": {
-    "browser": true,
-    "commonjs": true,
-    "es6": true,
-    "node": true
-  },
-  "extends": ["airbnb", "prettier"],
+  "extends": ["prettier"],
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
   "plugins": ["prettier"],
   "rules": {
-    "prettier/prettier": "error",
-    "camelcase": "off"
+    "prettier/prettier": "error"
   }
 }
