@@ -34,11 +34,11 @@ function swap(arr, idx1, idx2) {
  */
 function pivot(arr, start = 0, end = arr.length - 1) {
   // We are assuming the pivot is always the first element
-  const pivot = arr[start];
+  const pivotAt = arr[start];
   let swapIdx = start;
 
   for (let i = start + 1; i <= end; i += 1) {
-    if (pivot > arr[i]) {
+    if (pivotAt > arr[i]) {
       swapIdx += 1;
       swap(arr, swapIdx, i);
     }
