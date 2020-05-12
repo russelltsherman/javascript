@@ -5,7 +5,7 @@ function countDown(num) {
     return;
   }
   console.log(num);
-  num--;
+  num -= 1;
   countDown(num);
 }
 countDown(3);

@@ -7,11 +7,11 @@ const assert = require('assert');
  * @param {*} short
  */
 function naiveSearch(long, short) {
-  var count = 0;
-  for (var i = 0; i < long.length; i++) {
-    for (var j = 0; j < short.length; j++) {
+  let count = 0;
+  for (let i = 0; i < long.length; i += 1) {
+    for (let j = 0; j < short.length; j += 1) {
       if (short[j] !== long[i + j]) break;
-      if (j === short.length - 1) count++;
+      if (j === short.length - 1) count += 1;
     }
   }
   return count;

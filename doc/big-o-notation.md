@@ -19,7 +19,7 @@ Suppose we want to write a function that calculates the sum of all numbers from 
 ```js
 function addUpTo(n) {
   let total = 0;
-  for (let i = 1; i <= n; i++) {
+  for (let i = 1; i <= n; i+= 1) {
     total += i;
   }
   return total;
@@ -71,7 +71,7 @@ this function has 5n+2 operations
 ```js
 function addUpTo(n) {
   let total = 0;
-  for (let i = 1; i <= n; i++) {
+  for (let i = 1; i <= n; i += 1) {
     total += i;
   }
   return total;
@@ -108,7 +108,7 @@ it's big o notation would be `O(n)`
 ```js
 function addUpTo(n) {
   let total = 0;
-  for (let i = 1; i <= n; i++) {
+  for (let i = 1; i <= n; i += 1) {
     total += i;
   }
   return total;
@@ -120,8 +120,8 @@ it's big o notation would be `O(n*n)`
 
 ```js
 function printAllPairs(n) {
-  for (var i = 0; i < n; i++) {
-    for (var j = 0; j < n; j++) {
+  for (var i = 0; i < n; i += 1) {
+    for (var j = 0; j < n; j += 1) {
       console.log(i, j);
     }
   }

@@ -6,9 +6,9 @@ function maxSubarraySum(arr, num) {
     return null;
   }
   var max = -Infinity;
-  for (let i = 0; i < arr.length - num + 1; i++) {
+  for (let i = 0; i < arr.length - num + 1; i += 1) {
     temp = 0;
-    for (let j = 0; j < num; j++) {
+    for (let j = 0; j < num; j += 1) {
       temp += arr[i + j];
     }
     if (temp > max) {
